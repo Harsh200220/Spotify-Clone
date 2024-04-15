@@ -113,7 +113,7 @@ async function main() {
     
 
     // Get the list of all the songs
-    songs = await getSongs("Song/es");
+    songs = await getSongs("Song");
 
     playSong(songs[0], true)
     displayAlbums();
