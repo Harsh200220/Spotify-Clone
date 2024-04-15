@@ -62,7 +62,7 @@ const playSong = (track, pause = false) => {
 }
 
 async function displayAlbums(){
-    let a = await fetch(`/Song/`);
+    let a = await fetch(`https://harsh200220.github.io/Song/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
