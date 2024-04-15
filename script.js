@@ -5,7 +5,7 @@ let currFolder;
 
 async function getSongs(folder) {
     currFolder = folder
-    let a = await fetch(`ps://harsh200220.github.io/Song/es/`);
+    let a = await fetch(`/${currFolder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -62,7 +62,7 @@ const playSong = (track, pause = false) => {
 }
 
 async function displayAlbums(){
-    let a = await fetch(`https://harsh200220.github.io/Song/`);
+    let a = await fetch(`/Song/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
