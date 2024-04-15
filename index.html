@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Music app (CLONE)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="spotifylogo">
+                <div class="close">
+
+                    <img class="closeimg" width="30px" src="img/OP pause.png" alt="">
+                </div>
+                <div id="spotifyimg">
+                    <img width="100px" src="img/spotify logo.svg" alt="">
+                </div>
+                <div class="leftnav">
+                    <ul>
+                        <li class="home ">
+                            <img src="img/home.svg " class="invert" alt=""> <a href="">Home</a>
+                        </li>
+                        <li class="home ">
+                            <img src="img/search.svg " class="invert" alt=""><a href="">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="library">
+                <div class="libhead">
+                    <div class="liblogo">
+                        <img src="img/library.svg" class="invert" alt="">
+                        Your library
+                    </div>
+                    <div>
+                        <img src="img/plus.svg" class="invert" alt="">
+                    </div>
+                </div>
+                <div class="songlist">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="libfoot">
+                    <div>
+                        <ol class="footcont">
+                            <li><a href="">Legal</a></li>
+                            <li><a href="">Safety & Privacy Center</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Cookies</a></li>
+                            <li><a href="">About Ads</a></li>
+                            <li><a href="">Accessibility</a></li>
+                        </ol>
+                    </div>
+                    <div>
+
+                        <select name="language" id="" class="lang">
+                            <option value="English">English</option>
+                            <option value="English">Hindi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightnav">
+                <div class="arrow ">
+                    <img width="30px" id="hamburger" src="img/OP pause.png" alt="">
+                    <img src="img/left arrow.svg " class="invert" alt="">
+                    <img src="img/right arrow.svg" class="invert" alt="">
+
+                </div>
+                <div class="sign">
+                    <button class="signup">
+                        Sign Up
+                    </button>
+                    <button class="login">
+                        Log In
+                    </button>
+                </div>
+            </div>
+            <div class="playlistcontainer">
+                <h2>Popular Playlist</h2>
+                <div class="playlist">
+                </div>
+                <div class="playsongs ">
+                    <div class="playnext flex">
+                        <h4 id="title"></h4>
+                        <div class="changeSong">
+                            <img id="previous" src="img/prevous.svg" alt="" class="invert cursor">
+                            <img id="play" src="img/narutoPlay.png " alt="" class="invert naruplay cursor">
+                            <img id="next" src="img/next play.svg" alt="" class="invert cursor">
+                        </div>
+                        <div class="timevol flex">
+                            <div id="duration">
+
+                            </div>
+                            <div class="vol">
+                                <img id="volIcon" src="img/volume off.svg" class="invert" alt="">
+                                <input type="range" name="vol" id="ipVol">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar cursor">
+                        <div class="seekball">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
